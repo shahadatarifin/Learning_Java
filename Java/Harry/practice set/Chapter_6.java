@@ -33,6 +33,7 @@ class Sol_1 {
 }
 
 
+// Solution 2
 class Sol_2{
     public static void main(String[] args) {
         int [] array2 = {1, 2, 3, 4, 5, 6};
@@ -56,6 +57,8 @@ class Sol_2{
 }
 
 
+
+// Solution 3
 class Sol_3{
     public static void main(String[] args) {
         float [] array3 = {89.0f, 87.0f, 88.5f, 91.0f, 93.5f};
@@ -70,6 +73,9 @@ class Sol_3{
     }
 }
 
+
+
+// Solution 4
 class Sol_4 {
     public static void main(String[] args) {
         int[][] mat1 = {
@@ -99,6 +105,9 @@ class Sol_4 {
     }
 }
 
+
+
+// Solution 5
 // my
 class Sol_5_1 {
     public static void main(String[] args) {
@@ -135,6 +144,9 @@ class Sol_5_2 {
     }
 }
 
+
+
+// Solution 6
 class Sol_6{
     public static void main(String[] args) {
 
@@ -151,6 +163,8 @@ class Sol_6{
 }
 
 
+
+// Solution 7
 class Sol_7{
     public static void main(String[] args) {
         int [] array7 = {1, 3, 32, 36, 56, 100};

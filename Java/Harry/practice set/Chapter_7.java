@@ -9,13 +9,18 @@
 
 3.  Write a recursive function to calculate sum of first n natural numbers;
 
-4. Write a program using function to print following pattern
+4.  Write a program using function to print following pattern
     * * * *
     * * *
     * *
     *
 
-5.
+5.  Write e program to print nth turm of fibonacci series using recursion
+
+6.  Write a function to find average of a set of numbers passed as arguments
+
+7.  Repeat 2 using recursion
+8.  Repeat 4 using Recursion
  */
 
 public class Chapter_7 {
@@ -103,5 +108,68 @@ class Sol_7_5 {
     public static void main(String[] args) {
         int n = 5;
         System.out.println("nth term of Fibonacci series is : " + fibonacci(n));
+    }
+}
+
+
+
+
+
+// Solution 6
+class Sol_7_6{
+    static double avg(int ...arr){
+        if (arr.length == 0){
+            return 0;
+        } else {
+            double sum = 0.0;
+            for (int e : arr){
+                sum += e;
+            }
+            return sum / arr.length;
+        }
+    }
+
+    public static void main(String[] args){
+        System.out.println("Average of 4 and 5 is: " + avg(4, 5));
+        System.out.println("Average of 3, 4 and 5 is: " + avg(3, 4, 5));
+        System.out.println("Average of 2, 3, 4 and 5 is: " + avg(2, 3, 4, 5));
+    }
+}
+
+
+
+
+// Solution 7
+class Sol_7_7{
+    static void rec(int n){
+        if (n >= 1){
+            rec(n - 1);
+            for (int i = 1; i <= n; i++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String[] args) {
+        rec(5);
+    }
+}
+
+
+
+
+// Solution 8
+class Sol_7_8{
+    static void rec(int n){
+        if (n >= 1){
+            for (int i = 1; i <= n; i++){
+                System.out.print("* ");
+            }
+            System.out.println();
+            rec(n - 1);
+        }
+    }
+    public static void main(String[] args) {
+        rec(5);
     }
 }

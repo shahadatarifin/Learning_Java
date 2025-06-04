@@ -20,7 +20,12 @@
 6.  Write a function to find average of a set of numbers passed as arguments
 
 7.  Repeat 2 using recursion
+
 8.  Repeat 4 using Recursion
+
+9.  Write a function to convert celsius temperature into fahrenheit
+
+10. Repeat 3 using iterative approach
  */
 
 public class Chapter_7 {
@@ -171,5 +176,36 @@ class Sol_7_8{
     }
     public static void main(String[] args) {
         rec(5);
+    }
+}
+
+
+
+
+// Solution 9
+class Sol_7_9{
+    static double c_To_F(int c){
+        return (c * 1.8) + 32;
+    }
+    public static void main(String[] args) {
+        System.out.println("32°C in Fahrenheit is: " + c_To_F(32
+        ));
+    }
+}
+
+
+
+
+// Solution 10
+class Sol_7_10{
+    static int sumOfFirstNaturalNumbers(int n){
+        int sum = 0;
+        for (int i = 0; i <= n; i++){
+            sum += i;
+        }
+        return sum;
+    }
+    public static void main(String[] args) {
+        System.out.println("Sum of first 4 natural number is: " + sumOfFirstNaturalNumbers(4));
     }
 }

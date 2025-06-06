@@ -7,7 +7,9 @@ public class Chapter_8 {
     getName(method returning String)
     setName(method changing name)
 
-2. Create a class cellphone with methods to print "ringint...", "vigrating...", etc
+2.  Create a class cellphone with methods to print "ringing ...", "vibrating ...", etc
+
+3.  Create a class squire with a method to initialize it's size, calculating area, perimeter etc
  */
 }
 
@@ -65,7 +67,26 @@ class Sol_8_2{
 
 
 
+// Solution 3
+class Sol_8_3{
+    static class Square{
+        int side;
 
+        public int area(){
+            return side*side;
+        }
+        public int perimeter(){
+            return 4*side;
+        }
+    }
+
+    public static void main(String[] args) {
+        Square sq = new Square();
+        sq.side = 3;
+        System.out.println(sq.area());
+        System.out.println(sq.perimeter());
+    }
+}
 
 
 

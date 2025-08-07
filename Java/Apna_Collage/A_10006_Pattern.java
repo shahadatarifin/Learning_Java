@@ -1,4 +1,4 @@
-public class X_10006_Pattern {
+public class A_10006_Pattern {
     /*
     1.  *
         *

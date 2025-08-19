@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class A_00003_ConditionalStatement {
+public class A_10003_ConditionalStatement {
 }
 
 class age {
